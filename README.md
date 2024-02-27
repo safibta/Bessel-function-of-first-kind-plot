@@ -7,3 +7,9 @@ Power series expansion of Bessel function of the first kind is computed around x
 2. `k = Normal[Series[BesselJ[0, x], {x, 0, 45}]]` first calculates the power series expansion of \( J_0(x) \) around \( x = 0 \) up to \( x^{45} \), then `Normal` converts this series to a regular polynomial by removing the order term, resulting in a handy polynomial form for numerical computations.
 
 3. `Plot[k, {x, 0, 10}]` generates a plot of the polynomial approximation `k` of \( J_0(x) \) over the interval \( x = 0 \) to \( x = 10 \), visually demonstrating the approximation's behavior and allowing for analysis of the function's oscillations within this range.
+
+1. `p = Series[BesselJ[0, x], {x, 0, 50}]` computes the power series expansion of the Bessel function of the first kind \( J_0(x) \) around \( x = 0 \) up to the \( x^{50} \) term, providing a polynomial approximation for small \( x \) values, useful in physics and engineering for problems with cylindrical symmetry.
+
+2. `k = Normal[Series[BesselJ[0, x], {x, 0, 45}]]` first calculates the power series expansion of \( J_0(x) \) around \( x = 0 \) up to \( x^{45} \), then `Normal` converts this series to a regular polynomial by removing the order term, resulting in a handy polynomial form for numerical computations.
+
+3. `Plot[k, {x, 0, 10}]` generates a plot of the polynomial approximation `k` of \( J_0(x) \) over the interval \( x = 0 \) to \( x = 10 \), visually demonstrating the approximation's behavior and allowing for analysis of the function's oscillations within this range.
